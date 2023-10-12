@@ -7,17 +7,17 @@ pipeline {
   stages {
 
     stage ('Env Variable') {
-           step {
+           steps {
              echo "your build no is $BUILD_NUMBER"
            }
     }
         stage('Hello') {
-            step {
+            steps {
               echo 'Hello World'
             }
     }
         stage ('GoodBye') {
-      step {
+      steps {
         echo 'Have a nice day'
       }
         }
